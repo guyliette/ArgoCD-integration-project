@@ -1,17 +1,19 @@
 # Default values for focus.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-#Deploynment values
+# Deployment values
 
 app: focus
 replicas: 2
 ECR_REGISTRY: 381492114267.dkr.ecr.us-east-1.amazonaws.com
-IMAGE_TAG:  3
-
-
+IMAGE_TAG: "3"
+containerPort: 80
 
 service:
-  type: LoadBalencer
+  type: LoadBalancer
   port: 80
-  target_port: 80
+  targetPort: 80
   protocol: TCP
+
+ingress:
+  enabled: false
