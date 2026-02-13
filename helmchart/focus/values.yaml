@@ -6,7 +6,7 @@
 app: focus
 replicas: 2
 ECR_REGISTRY: 381492114267.dkr.ecr.us-east-1.amazonaws.com
-IMAGE_TAG: latest, 2
+IMAGE_TAG:  3
 
 
 
